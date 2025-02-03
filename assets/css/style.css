@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #E9E9E9;
+}
+
+/*** HEADER ***/
+
+header {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+#header-logo {
+    width: 150px;
+    height: 100px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+#menu-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: .5em; */
+}
+
+#menu-links a,
+#menu-links a:visited {
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+#menu-links a:hover {
+    text-decoration: underline;
+}
+
+#login-btn {
+    background-color: #EF850D;
+    padding: 24px 36px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+/*** HERO ***/
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-left,
+#hero-right {
+    width: 50%;
+    border-radius: 2em;
+    outline: 1px solid red;
+}
+
+#hero-left {
+    background-color: white;
+}
+
+#slogan {
+    font-size: 4em;
+}
+
+#discover-btn,
+#interested-btn {
+    background-color: #EF850D;
+    padding: 24px 36px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+#interested-btn {
+    background-color: #1A2C41;
+}
+
+#partenaires {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#partenaires img {
+    /* width: 100px; */
+    height: 100px;
+}
+
+
+#hero-right img {
+    width: 100%;
+    height: auto;
+}
