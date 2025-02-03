@@ -1,3 +1,5 @@
+
+/* Roboto font  from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
@@ -14,6 +16,8 @@ body {
     background-color: #E9E9E9;
 }
 
+
+
 /*** HEADER ***/
 
 header {
@@ -22,48 +26,58 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+
+    #header-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        gap: 2em;
+        
+        #menu-links {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* gap: .5em; */
+            
+            a,
+            a:visited {
+                color: black;
+                font-size: 1.2em;
+                font-weight: bold;
+                padding: .5em;
+                
+                &:hover {
+                    text-decoration: underline;
+                    transform: scale(1.025);
+                    color: #e28113;
+                }
+            }
+        }
+
+        #login-btn {
+            background-color: #EF850D;
+            border-radius: 15px;
+            border: none;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 24px 36px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e28113;
+            }
+        }
+    }
 }
 
-#header-logo {
-    width: 150px;
-    height: 100px;
-}
 
-#menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 35%;
-}
-
-#menu-links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* gap: .5em; */
-}
-
-#menu-links a,
-#menu-links a:visited {
-    padding: .5em;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: black;
-}
-
-#menu-links a:hover {
-    text-decoration: underline;
-}
-
-#login-btn {
-    background-color: #EF850D;
-    padding: 24px 36px;
-    font-size: 24px;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-weight: 600;
-}
 
 /*** HERO ***/
 
@@ -71,21 +85,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
+    padding: 2em;
 }
 
 #hero-left,
 #hero-right {
     width: 50%;
     border-radius: 2em;
-    outline: 1px solid red;
+    overflow: hidden;
 }
 
 #hero-left {
+    padding: 2em;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    .cta {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+    }
 }
 
 #slogan {
-    font-size: 4em;
+    font-size: 3em;
+    font-weight: 100;
 }
 
 #discover-btn,
@@ -97,10 +125,19 @@ header {
     border-radius: 15px;
     color: white;
     font-weight: 600;
+
+    &:hover {
+        background-color: #e28113;
+        cursor: pointer;
+    }
 }
 
 #interested-btn {
     background-color: #1A2C41;
+
+    &:hover {
+        background-color: #0f1a27;
+    }
 }
 
 #partenaires {
@@ -112,6 +149,11 @@ header {
 #partenaires img {
     /* width: 100px; */
     height: 100px;
+    border-radius: .5em;
+    
+    &:hover {
+        box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+    }
 }
 
 
